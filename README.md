@@ -1,2 +1,2 @@
-# Projet-Image_Medicale
+# Projet-Image-Medicale
 Projet Image Médicale (IMT Atlantique A1)
