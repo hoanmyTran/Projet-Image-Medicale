@@ -1,0 +1,24 @@
+<div *ngIf="image">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center">{{image.name | uppercase}} Details</h2>
+      <img [src]="image.url" class="img-responsive center-block"
+           style="max-height: 700px; max-width : 800px; border : 5px solid black;">
+    </div>
+  </div>
+  <div class="row">
+    <div class=" class=col-md-2 col-md-offset-5">
+      <div class="btn-toolbar btn-toolbar-centered btn-group-lg" role="toolbar">
+        <button class="center-block" type="button" class="btn btn-primary" (click)="goBack()">Go back</button>
+        <button class="center-block" type="button" class="btn btn-primary" (click)="edit()">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <canvas class="center-block" id="canvas" width="800" height="500" #myCanvas
+            style="border : 5px solid black;"></canvas>
+  </div>
+</div>

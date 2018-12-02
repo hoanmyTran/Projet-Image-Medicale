@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="row">
+    <h2 class="text-center">My Images</h2>
+  </div>
+  <div class="col center-block" id="myList">
+    <div class="list-group">
+      <div *ngFor="let image of images">
+        <a class="list-group-item list-group-item-info bg-info col align-self-center clearfix cover-item" routerLink="/detail/{{image.id}}">
+          <span class="pull-left col-md-6 text-center">{{image.name}}</span>
+          <span class="pull-right">
+            <img [src]="image.url" class="img-responsive center-block"
+                 style="border : 5px solid black;">
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
